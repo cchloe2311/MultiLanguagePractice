@@ -6,10 +6,10 @@
 ## 목표
 en, ko 각각에 해당하는 유튜브 프리미엄 가격을 출력하는 앱 만들기
 
-### 구현
-#### value-ko 폴더 추가
+## 구현
+### value-ko 폴더 추가
 res>value 폴더에 value-ko를 추가한다. 여기서 ko는 언어코드를 의미한다. 기본 value는 영어로 설정된다. 각 폴더 내 string.xml 파일 내 다국어로 표현하고 싶은 문자열을 정의해둔다. (화면 orientation에 대한 xml 구성과 같은 방식이다!)
-#### xml에서 사용하기
+### xml에서 사용하기
 xml에 고정해 나오는 텍스트는 다음과 같이 xml에서 바로 넣으면 된다.
 ```
     <TextView
@@ -18,7 +18,7 @@ xml에 고정해 나오는 텍스트는 다음과 같이 xml에서 바로 넣으
         android:layout_height="wrap_content"
         android:text="@string/youtube_price_text"
 ```
-#### kotlin 코드에서 사용하기
+### kotlin 코드에서 사용하기
 유튜브 프리미엄 가격을 R.string.youtube_price로 정의하고 그 값을 kotlin 코드내에서 가져와 설정하는 방법이다.
 ```
         val formatter: NumberFormat = DecimalFormat("#,###")
